@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <!-- Basic -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">   
+   
+    <!-- Mobile Metas -->
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+ 
+     <!-- Site Metas -->
+    <title>Emma Bethel</title>  
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Site Icons -->
+    <!-- <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+    <link rel="apple-touch-icon" href="images/apple-touch-icon.png"> -->
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- Site CSS -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Responsive CSS -->
+    <link rel="stylesheet" href="css/responsive.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/custom.css">
+	<script src="js/modernizr.js"></script> <!-- Modernizr -->
+
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+<body id="page-top" class="politics_version">
+
+    <!-- LOADER -->
+    <div id="preloader">
+        <div id="loader">
+			<ul>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+			</ul>
+		</div>
+    </div><!-- end loader -->
+    <!-- END LOADER -->
+	
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+      <div class="container">
+        <!-- <a class="navbar-brand js-scroll-trigger" href="#page-top">
+			<img class="img-fluid" src="images/logo.png" alt="" />
+		</a> -->
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          Menu
+          <i class="fa fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav text-uppercase ml-auto">
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger active" href="#content">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#portfolio">Portfolio</a>
+            </li>
+			<li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+	
+	<div id="content">
+		<div id="slider">
+		  <img src="uploads/me.jpg" alt="Roboticist" data-url="#1">
+		  <img src="uploads/pacbot.jpg" alt="Software Engineer" data-url="#2">
+		</div>
+	</div>
+
+    <div id="about" class="section wb">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-md-6">
+                    <div class="right-box-pro">
+                        <img src="uploads/about.jpg" alt="" class="img-fluid img-rounded">
+						<div class="card-back"></div>
+						<div class="card-front"></div>						
+                    </div><!-- end media -->
+                </div><!-- end col -->
+				<div class="col-md-6">
+                    <div class="message-box">                        
+                        <h2>About Emma.</h2>
+                        <p> Hi! I'm a software engineer and chronic robotics nerd, currently pursuing a BS in Computer Science at Tufts University. I'll gladly geek out over pretty much any robotics-related topic, but at the moment I'm particularly interested in robot learning and human-robot interaction.</p>
+						<p>When not writing code or building robots (rare), I'm probably knitting, writing, reorganizing my earring collection, or making far too many baked goods.</p>
+                    </div><!-- end messagebox -->
+                </div><!-- end col -->
+				
+            </div><!-- end row -->
+        </div><!-- end container -->
+    </div><!-- end section -->
+	
+	<div id="portfolio" class="section lb">
+		<div class="container">
+			<div class="section-title text-center">
+                <h3>Portfolio</h3>
+                <p>A few of my favorite projects I've worked on!</p>
+            </div><!-- end title -->
+			
+			<div class="gallery-menu row text-center">
+				<div class="col-md-12">
+					<div class="button-group filter-button-group">
+						<button class="active" data-filter="*">All</button>
+						<button data-filter=".gal_a">Robots</button>
+						<button data-filter=".gal_b">Misc. Software</button>
+					</div>
+				</div>
+			</div>
+			
+			<div class="gallery-list row">
+				<div class="col-md-4 col-sm-6 gallery-grid gal_a">
+					<div class="gallery-single fix">
+						<img src="uploads/cvlsrs.jpg" class="img-fluid" alt="Image">
+						<div class="img-overlay">
+                            <div onclick="OpenModal('cvlsrs')" class="hoverbutton global-radius">CVLSRS</div>
+						</div>
+					</div>
+				</div>
+				
+				<div class="col-md-4 col-sm-6 gallery-grid gal_a">
+					<div class="gallery-single fix">
+						<img src="uploads/pacbot.jpg" class="img-fluid" alt="Image">
+						<div class="img-overlay">
+							<div onclick="OpenModal('pacbot')" class="hoverbutton global-radius">2022 Pacbots</div>
+						</div>
+					</div>
+				</div>
+				
+				<div class="col-md-4 col-sm-6 gallery-grid gal_b">
+					<div class="gallery-single fix">
+						<img src="uploads/pi_locator.jpg" class="img-fluid" alt="Image">
+						<div class="img-overlay">
+                            <div onclick="OpenModal('pi-bot')" class="hoverbutton global-radius">Pi Restock Notifier</div>
+						</div>
+					</div>
+				</div>
+				
+				<div class="col-md-4 col-sm-6 gallery-grid gal_b">
+					<div class="gallery-single fix">
+						<img src="uploads/code_default.jpg" class="img-fluid" alt="Image">
+						<div class="img-overlay">
+                            <div onclick="OpenModal('website')" class="hoverbutton global-radius">This Website</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			</div>
+            <div class="overlay" id="overlay-pacbot">
+                <div class="popup">
+                    <div onclick="CloseModal('pacbot')" class="CloseIcon">&#10006;</div>
+                    <h2>2022 Pacbots</h2>
+                    <img src="uploads/pacbot.jpg" style="padding:5px;width:40%">
+                    <p>These three little bots competed in the 2022 Harvard Pacbot Competition, in which robots autonomously navigate a physical pacman maze while avoiding ghosts and devouring power pellets that are projected on the floor. In this project, I— along with two other programmers— implemented both A*-based algorithm to guide the robot's actions, and low-level control code for carrying out those actions using the wheel motors and input from a Gyroscope and distance sensors. </p>
+                    <p><a href=https://github.com/Tufts-Robotics-Club/Pacbot-2022>Source Code</a></p>
+                </div>
+            </div>
+
+            <div class="overlay" id="overlay-pi-bot">
+                <div class="popup">
+                    <div onclick="CloseModal('pi-bot')" class="CloseIcon">&#10006;</div>
+                    <h2>Raspberry Pi Restock Notifier</h2>
+                    <img src="uploads/pi_locator.jpg" style="padding:5px;width:40%">
+                    <p>2021 and 2022 saw a major Raspberry Pi shortage, during which many hobbyists relied on DPHacks' Raspberry Pi Locator <a href="https://rpilocator.com/">website</a> and accompanying RSS feed, which updates every time Raspberry Pis were restocked at a list of approved vendors, to get their hands on the chronically out-of-stock microcontrollers. Mostly due to my lack of a Twitter account (the most popular method of receiving these notifications seems to be from a twitter bot) I set up a SlackBot— with a MySQL and Flask-based backend hosted on AWS infrastructure— to poll that RSS feed and send restock notifications to subscribed users for specified Pi types and vendors. </p>
+                    <p><a href=https://github.com/EmmaB3/RPI-Restock-Notifier>Source Code</a></p>
+                    <p><a href="https://pi-locator-bot.emma-bethel.com/">Add it to your own workspace!</a></p>
+                </div>
+            </div>
+
+            <div class="overlay" id="overlay-cvlsrs">
+                <div class="popup">
+                    <div onclick="CloseModal('cvlsrs')" class="CloseIcon">&#10006;</div>
+                    <h2>CVLSRS</h2>
+                    <img src="uploads/cvlsrs.jpg" style="padding:5px;width:40%">
+                    <p>Disappointed with the lack of opportunities for more code-focused roboticists in Tufts Robotics Club's annual Battlebots competition, I started the Computer Vision Laser Space Robot Satellite— or CVLSRS— competition during my first semester on the club's executive board. In the competition, teams write code for a pre-existing robot (running on a Raspberry Pi) to identify and send IR emissions toward specified vision targets. With the goal of mimicking the real-world experience of writing high-level code for an off-the-shelf (or otherwise pre-existing) robot, I wrote an extensive repository of starter code for the competitors, allowing them to control robot movement by broadcasting messages to preexisting nodes over a local server (using the Harvard Undergraduate Robotics Club's Robomodules framework, which somewhat mimcs the behavior of ROS), rather than directly controlling motors and reading from sensors. As the competition's primary founder, I participated in nearly every other aspect of its creation, including designing the game itself (scoring system, rules, etc), leading coding workshops for competitors, and assisting in the design, fabrication, assembly, and testing of both the electrical and mechanical systems of the final robot. </p>
+                    <p><a href=https://github.com/Tufts-Robotics-Club/CVLSRS-Starter-Code>2022 Starter Code</a></p>
+                </div>
+            </div>
+
+            <div class="overlay" id="overlay-website">
+                <div class="popup">
+                    <div onclick="CloseModal('website')" class="CloseIcon">&#10006;</div>
+                    <h2>This Website</h2>
+                    <p>Hope you're enjoying it!</p>
+                    <p><a href=https://github.com/Tufts-Robotics-Club/CVLSRS-Starter-Code>Source Code</a></p>
+                </div>
+            </div>
+		</div>
+	</div>
+
+    <div id="contact" class="section db">
+        <div class="container">
+            <div class="section-title text-center">
+                <h3>Contact</h3>
+                <p><b>Email:</b> emma.l.bethel@gmail.com</p>
+                <p>Resume and socials are linked below! Feel free to reach out with any questions, requests, or really good scone recipes.</p>
+
+                <a href="./uploads/Resume.pdf" style="text-decoration: none;"><i class="fa fa-file" style="font-size:40px;color:rgb(153, 153, 153);padding:5px;"></i></a>
+                <a href="https://github.com/EmmaB3" style="text-decoration: none;"><i class="fa fa-github-square" style="font-size:48px;color:rgb(153, 153, 153);padding:5px;"></i></a>
+                <a href="https://www.linkedin.com/in/emma-bethel-619273236/" style="text-decoration: none;"><i class="fa fa-linkedin-square" style="font-size:48px;color:rgb(153, 153, 153);padding:5px;"></i></a>
+            </div><!-- end title -->
+        </div><!-- end container -->
+    </div><!-- end section -->
+
+    <div class="copyrights">
+        <div class="container">
+            <div class="footer-distributed">
+                <div class="footer-left">
+                    <p class="footer-company-name">All Rights Reserved. &copy; 2018 <a href="#">Jimmy</a> Design By : 
+					<a href="https://html.design/">html design</a></p>
+                </div>
+            </div>
+        </div><!-- end container -->
+    </div><!-- end copyrights -->
+
+    <a href="#" id="scroll-to-top" class="dmtop global-radius"><i class="fa fa-angle-up"></i></a>
+
+    <!-- ALL JS FILES -->
+    <script src="js/all.js"></script>
+    <script src="js/popups.js"></script>
+	<!-- Camera Slider -->
+	<script src="js/jquery.mobile.customized.min.js"></script>
+	<script src="js/jquery.easing.1.3.js"></script> 
+	<script src="js/parallaxie.js"></script>
+	<script src="js/headline.js"></script>
+	<script src="js/classie.js"></script>
+	<script src="js/TweenMax.min.js"></script>
+	<script src="js/slider-top.js"></script>
+	<!-- Contact form JavaScript -->
+    <script src="js/jqBootstrapValidation.js"></script>
+    <script src="js/contact_me.js"></script>
+    <!-- ALL PLUGINS -->
+    <script src="js/custom.js"></script>
+    <script src="js/jquery.vide.js"></script>
+
+</body>
+</html>
